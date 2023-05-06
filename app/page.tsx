@@ -1,10 +1,8 @@
-import Image from 'next/image'
-import styles from './page.module.scss'
+"use client";
+
+import Image from "next/image";
+import styles from "./page.module.scss";
 
 export default function Home() {
-  return (
-    <main>
-     <h1>Home</h1>
-    </main>
-  )
+  return <main></main>;
 }
