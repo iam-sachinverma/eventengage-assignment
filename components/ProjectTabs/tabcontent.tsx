@@ -11,7 +11,7 @@ const { Content, Footer, Sider } = Layout;
 
 export function TabContent() {
   return (
-    <Layout>
+    <Layout style={{ background: "#f2fbf9" }}>
       <Sider
         breakpoint="lg"
         collapsedWidth="0"
@@ -46,7 +46,7 @@ export function TabContent() {
           </ul>
         </div>
       </Sider>
-      <Layout style={{ margin: "0 0 0 1.25rem" }}>
+      <Layout style={{ margin: "0 0 0 1.25rem", background: "#f2fbf9" }}>
         <div className={styles.heading_3}>
           <h2>Company Profile</h2>
           <div className={styles.button_group}>
@@ -75,10 +75,16 @@ export function TabContent() {
             </div> */}
           </div>
         </Content>
-        <Footer style={{ textAlign: "start" }}>
-          <div className="footer_icon">
-            <Image src="/chat.svg" alt="" width={25} height={25} />
-            <Image src="/share.svg" alt="" width={25} height={25} />
+        <Footer style={{ padding: "0", background: "#f2fbf9" }}>
+          <div className={styles.footer_icon}>
+            <div className={styles.footer_icon_wrapper}>
+              <Image src="/chat.svg" alt="" width={30} height={30} />
+              <div className={styles.chat_badge}>
+                <span>8</span>
+              </div>
+            </div>
+            <div className={styles.separator}></div>
+            <Image src="/share.svg" alt="" width={30} height={30} />
           </div>
         </Footer>
       </Layout>
