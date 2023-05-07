@@ -1,0 +1,18 @@
+.container {
+    padding: 0 1.6rem 0 1.6rem;
+    width: 100%;
+}
+
+.page_top {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+
+    .heading_1 {
+        font-style: normal;
+        width: 100%;
+        font-weight: 900;
+        line-height: 43px;
+        color: #04433b;
+    }
+}
