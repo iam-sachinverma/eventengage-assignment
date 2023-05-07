@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Tabs } from "antd";
 import styles from "./projecttabs.module.scss";
+import { TabContent } from "./tabcontent";
 
 import { useMediaQuery } from "react-responsive";
 
@@ -31,12 +32,14 @@ const initialItems = [
 ];
 
 const ProjectTabs: React.FC = () => {
-  const [activeKey, setActiveKey] = useState(initialItems[0].key);
+  const [activeKey, setActiveKey] = useState("1");
   const [items, setItems] = useState(initialItems);
 
   const isMobile = useMediaQuery({
     query: "(max-width: 45em)",
   });
+
+  const { TabPane } = Tabs;
 
   const onChange = (newActiveKey: string) => {
     setActiveKey(newActiveKey);
@@ -50,14 +53,35 @@ const ProjectTabs: React.FC = () => {
           onChange={onChange}
           activeKey={activeKey}
           items={items}
-          tabBarStyle={{ backgroundColor: "#f2fbf9" }}
           size={isMobile ? "small" : "large"}
+          tabBarGutter={5}
         />
+        {/* <Tabs
+          type="card"
+          onChange={onChange}
+          activeKey={"1"}
+          size={isMobile ? "small" : "large"}
+          tabBarGutter={5}
+        >
+          <TabPane tab="Basic Info" key="1">
+            <TabContent />
+          </TabPane>
+          <TabPane tab="Files" key="2">
+            Content of Tab Pane 2
+          </TabPane>
+          <TabPane tab="Mutual Action Plan" key="3">
+            Content of Tab Pane 3
+          </TabPane>
+          <TabPane tab="Contact" key="3">
+            Content of Tab Pane 3
+          </TabPane>
+        </Tabs> */}
       </div>
 
       <div className={styles.desktop}>
         <Tabs
           type="card"
+          activeKey="0"
           size="large"
           tabBarStyle={{ backgroundColor: "#f2fbf9" }}
           items={[

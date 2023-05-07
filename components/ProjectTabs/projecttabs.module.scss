@@ -1,6 +1,6 @@
 .project_tabs {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 1.5rem;
     font-weight: 700;
     font-style: normal;
@@ -12,7 +12,9 @@
 }
 
 @media (max-width: 45em) {
-    .project_tabs .desktop {
-        display: none;
+    .project_tabs {
+        .desktop {
+            display: none;
+        }
     }
 }

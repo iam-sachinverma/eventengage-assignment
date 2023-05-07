@@ -10,6 +10,8 @@ import ProjectTabs from "@/components/ProjectTabs/projecttabs";
 
 import { useMediaQuery } from "react-responsive";
 
+import { TabContent } from "@/components/ProjectTabs/tabcontent";
+
 export default function Home() {
   const isMobile = useMediaQuery({
     query: "(max-width: 45em)",
@@ -60,6 +62,8 @@ export default function Home() {
       <div className="project_scope_tabs">
         <ProjectTabs />
       </div>
+
+      <TabContent />
     </main>
   );
 }

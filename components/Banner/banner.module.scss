@@ -7,16 +7,21 @@
     border-radius: 12px;
 
     .brand_logo {
-        position: absolute;
-        left: 51px;
-        top: 289px;
-        width: 246px;
-        height: 101px;
-        background: #ffffff;
-        border-radius: 10px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        position: absolute;
+        bottom: 0;
+        background: #ffffff;
+        transform: translateY(50%);
+        padding: 1rem;
+        border-radius: 10px;
+        margin-left: 1.5rem;
+
+        .logo_1 {
+            margin-right: 0.8rem;
+            margin-left: 0.8rem;
+        }
     }
 
     .banner_overlay {
@@ -27,7 +32,6 @@
         height: 100%;
         background-color: rgba(255, 255, 255, 0.8);
         transform: skewX(-20deg) translateX(-30%);
-        z-index: 1;
     }
 
     .banner_content {
@@ -35,7 +39,6 @@
         top: 50%;
         left: 56%;
         transform: translate(-50%, -50%);
-        z-index: 2;
         width: 80%;
         max-width: 800px;
         margin: 0 auto;
@@ -60,7 +63,6 @@
     .banner_content {
         h1 {
             font-size: 40px;
-            text-indent: -1em;
         }
     }
 }
