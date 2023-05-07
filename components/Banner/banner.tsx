@@ -6,6 +6,12 @@ import Image from "next/image";
 export default function Banner() {
   return (
     <div className={styles.banner}>
+      <div className={styles.brand_logo}>
+        <Image src="/wework.png" alt="banner" fill quality={100} />
+        <span>+</span>
+        <Image src="/salesforce.png" alt="banner" fill quality={100} />
+      </div>
+
       <div className={styles.desktop}>
         <Image src="/banner.png" alt="banner" fill quality={100} />
       </div>

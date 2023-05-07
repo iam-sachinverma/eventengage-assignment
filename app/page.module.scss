@@ -7,12 +7,119 @@
     display: flex;
     justify-content: space-around;
     margin-top: 1rem;
+    align-items: center;
 
     .heading_1 {
-        font-style: normal;
         width: 100%;
-        font-weight: 900;
-        line-height: 43px;
-        color: #04433b;
+
+        h1 {
+            font-style: normal;
+            color: #04433b;
+            font-weight: 800;
+            line-height: 43px;
+        }
+
+        span {
+            font-weight: 550;
+        }
+    }
+}
+
+.heading_2 {
+    margin: 4.5rem 0 1.5rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    h2 {
+        width: 100%;
+        font-weight: 700;
+        line-height: 10px;
+        font-style: normal;
+    }
+
+    .progess_bar {
+        .ant_progress_inner {
+            border-radius: 100px;
+            overflow: hidden;
+        }
+
+        .progess_label {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 0.123rem;
+            font-style: normal;
+
+            .progress_percentage {
+                font-weight: 800;
+                font-size: 1.063rem;
+                color: #00b686;
+            }
+
+            .progress_heading {
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 20px;
+                color: #7b8786;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 45em) {
+    .container {
+        padding: 0 0.7rem;
+    }
+
+    .page_top {
+        margin-top: 0.7rem;
+    }
+
+    .heading_1 {
+        width: 100%;
+
+        h1 {
+            font-style: normal;
+            color: #04433b;
+            font-weight: 800;
+            font-size: 1.125rem;
+        }
+
+        span {
+            font-weight: 550;
+        }
+    }
+
+    .heading_2 {
+        margin: 4.5rem 0 1.5rem 0;
+        display: flex;
+        justify-content: space-around;
+
+        h2 {
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .progess_bar {
+            .ant_progress_inner {
+                border-radius: 20px;
+                overflow: hidden;
+            }
+
+            .progess_label {
+                margin-bottom: 0px;
+
+                .progress_percentage {
+                    font-weight: 800;
+                    font-size: 0.6rem;
+                }
+
+                .progress_heading {
+                    font-weight: 400;
+                    font-size: 0.6rem;
+                }
+            }
+        }
     }
 }
