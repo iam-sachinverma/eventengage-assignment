@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "antd";
 import Image from "next/image";
 import styles from "./page.module.scss";
