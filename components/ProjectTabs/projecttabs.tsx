@@ -48,24 +48,25 @@ const ProjectTabs: React.FC = () => {
   return (
     <div className={styles.project_tabs}>
       <div className={styles.tab}>
-        <Tabs
+        {/* <Tabs
           type="card"
           onChange={onChange}
           activeKey={activeKey}
           items={items}
           size={isMobile ? "small" : "large"}
           tabBarGutter={5}
-        />
-        {/* <Tabs
+        /> */}
+        <Tabs
           type="card"
           onChange={onChange}
           activeKey={"1"}
           size={isMobile ? "small" : "large"}
           tabBarGutter={5}
         >
-          <TabPane tab="Basic Info" key="1">
-            <TabContent />
-          </TabPane>
+          <TabPane
+            tab={<span style={{ color: "#00B686" }}>Basic Info</span>}
+            key="1"
+          ></TabPane>
           <TabPane tab="Files" key="2">
             Content of Tab Pane 2
           </TabPane>
@@ -75,7 +76,7 @@ const ProjectTabs: React.FC = () => {
           <TabPane tab="Contact" key="3">
             Content of Tab Pane 3
           </TabPane>
-        </Tabs> */}
+        </Tabs>
       </div>
 
       <div className={styles.desktop}>

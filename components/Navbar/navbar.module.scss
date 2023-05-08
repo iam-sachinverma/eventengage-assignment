@@ -152,11 +152,15 @@ $background-color_2: #a5d8ff;
             pointer-events: auto;
         }
         .mobile_navbar_btn {
-            .mobile_nav_icon[className="close-outline"] {
-                display: block;
+            .mobile_nav_icon {
+                span[data-name="close-outline"] {
+                    display: block;
+                }
             }
-            .mobile_nav_icon[className="menu-outline"] {
-                display: none;
+            .mobile_nav_icon {
+                span[data-name="menu-outline"] {
+                    display: none;
+                }
             }
         }
     }

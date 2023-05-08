@@ -3,10 +3,22 @@
 import styles from "./navbar.module.scss";
 import "./navbar.module.scss";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+
+  const toggleMobileNav = (
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ): void => {
+    event.preventDefault();
+    setIsMobileNavOpen(!isMobileNavOpen);
+  };
+
   return (
-    <header className={`${styles.header}`}>
+    <header
+      className={`${styles.header} ${isMobileNavOpen ? styles.active : ""}`}
+    >
       <div className={styles.logo}>
         <a href="#" target="_blank" rel="noopener noreferrer">
           <Image src="/logo.svg" alt="Logo" width={40} height={40} priority />
@@ -80,12 +92,12 @@ export default function Navbar() {
       </nav>
 
       <div className={styles.mobile_navbar_btn}>
-        <a href="" className={styles.mobile_nav_icon}>
+        <a href="" className={styles.mobile_nav_icon} onClick={toggleMobileNav}>
           <span className="material-icons-round" data-name="close-outline">
             close
           </span>
         </a>
-        <a href="" className={styles.mobile_nav_icon}>
+        <a href="" className={styles.mobile_nav_icon} onClick={toggleMobileNav}>
           <span className="material-icons-round" data-name="menu-outline">
             <svg
               width="40"
