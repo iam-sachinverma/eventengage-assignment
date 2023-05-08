@@ -1,10 +1,5 @@
 /** @type {import('next').NextConfig} */
-const path = require("path");
 
-const nextConfig = {
-  // eslint: {
-  //   ignoreDuringBuilds: true,
-  // },
-};
+const nextConfig = {};
 
 module.exports = nextConfig;
