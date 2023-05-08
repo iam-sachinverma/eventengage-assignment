@@ -2,8 +2,13 @@
 
 import styles from "./banner.module.scss";
 import Image from "next/image";
+import { useMediaQuery } from "react-responsive";
 
 export default function Banner() {
+  const isMobile = useMediaQuery({
+    query: "(max-width: 45em)",
+  });
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.banner}>
@@ -29,8 +34,8 @@ export default function Banner() {
           <Image
             src="/wework.png"
             alt="banner"
-            width={77}
-            height={77}
+            width={isMobile ? 35 : 70}
+            height={isMobile ? 35 : 70}
             quality={100}
           />
         </div>
@@ -38,8 +43,8 @@ export default function Banner() {
           <Image
             src="/plus.svg"
             alt="banner"
-            width={18}
-            height={18}
+            width={isMobile ? 10 : 18}
+            height={isMobile ? 10 : 18}
             quality={100}
           />
         </span>
@@ -47,8 +52,8 @@ export default function Banner() {
           <Image
             src="/slaesforce.png"
             alt="banner"
-            width={98}
-            height={99}
+            width={isMobile ? 40 : 90}
+            height={isMobile ? 40 : 90}
             quality={100}
           />
         </div>
