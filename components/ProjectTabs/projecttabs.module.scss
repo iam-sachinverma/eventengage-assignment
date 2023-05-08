@@ -1,13 +1,17 @@
 .project_tabs {
     display: flex;
     justify-content: space-around;
+    font-style: normal;
     margin-top: 1.5rem;
     font-weight: 700;
-    font-style: normal;
     line-height: 20px;
 
     .tab {
         width: 100%;
+
+        span {
+            color: #657372;
+        }
     }
 }
 

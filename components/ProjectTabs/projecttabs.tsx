@@ -62,18 +62,19 @@ const ProjectTabs: React.FC = () => {
           activeKey={"1"}
           size={isMobile ? "small" : "large"}
           tabBarGutter={5}
+          className="tabs_style"
         >
           <TabPane
             tab={<span style={{ color: "#00B686" }}>Basic Info</span>}
             key="1"
           ></TabPane>
-          <TabPane tab="Files" key="2">
+          <TabPane tab={<span>Files</span>} key="2">
             Content of Tab Pane 2
           </TabPane>
-          <TabPane tab="Mutual Action Plan" key="3">
+          <TabPane tab={<span>Mutual Action Plan</span>} key="3">
             Content of Tab Pane 3
           </TabPane>
-          <TabPane tab="Contact" key="3">
+          <TabPane tab={<span>Contact</span>} key="3">
             Content of Tab Pane 3
           </TabPane>
         </Tabs>
@@ -84,7 +85,7 @@ const ProjectTabs: React.FC = () => {
           type="card"
           activeKey="0"
           size="large"
-          tabBarStyle={{ backgroundColor: "#f2fbf9" }}
+          tabBarStyle={{ color: "#657372" }}
           items={[
             {
               label: `Internal Actions`,
