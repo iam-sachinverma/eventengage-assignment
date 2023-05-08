@@ -45,22 +45,34 @@ export function TabContent() {
         <div className={styles.sidebar}>
           <ul className={styles.sidebar_menu}>
             <li className="sidebar-menu-item">
-              <a href="#">Overview</a>
+              <a href="https://github.com/iam-sachinverma/eventengage-assignment">
+                Overview
+              </a>
             </li>
             <li className="sidebar-menu-item">
-              <a href="#">Welcome</a>
+              <a href="https://github.com/iam-sachinverma/eventengage-assignment">
+                Welcome
+              </a>
             </li>
             <li className="sidebar-menu-item">
-              <a href="#">Product Capabilities</a>
+              <a href="https://github.com/iam-sachinverma/eventengage-assignment">
+                Product Capabilities
+              </a>
             </li>
             <li className="sidebar-menu-item">
-              <a href="#">Customer Success Stories</a>
+              <a href="https://github.com/iam-sachinverma/eventengage-assignment">
+                Customer Success Stories
+              </a>
             </li>
             <li className="sidebar-menu-item">
-              <a href="#">File Sharing</a>
+              <a href="https://github.com/iam-sachinverma/eventengage-assignment">
+                File Sharing
+              </a>
             </li>
             <li className="sidebar-menu-item">
-              <a href="#">Our Deck</a>
+              <a href="https://github.com/iam-sachinverma/eventengage-assignment">
+                Our Deck
+              </a>
             </li>
           </ul>
         </div>

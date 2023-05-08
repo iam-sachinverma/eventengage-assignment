@@ -17,10 +17,14 @@ export default function Navbar() {
 
   return (
     <header
-      className={`${styles.header} ${isMobileNavOpen ? styles.active : ""}`}
+      className={`${styles.header} ${isMobileNavOpen ? styles.active : " "}`}
     >
       <div className={styles.logo}>
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/iam-sachinverma/eventengage-assignment"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Image src="/logo.svg" alt="Logo" width={40} height={40} priority />
         </a>
         <span className="material-icons-round arrow-right">chevron_right</span>
@@ -29,7 +33,10 @@ export default function Navbar() {
       <nav className={styles.navbar}>
         <ul className={styles.navbar_list}>
           <li>
-            <a className="navbar_link" href="#">
+            <a
+              className="navbar_link"
+              href="https://github.com/iam-sachinverma/eventengage-assignment"
+            >
               <Image
                 src="/search.svg"
                 alt="Logo"
@@ -40,7 +47,10 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a className="navbar_link" href="#">
+            <a
+              className="navbar_link"
+              href="https://github.com/iam-sachinverma/eventengage-assignment"
+            >
               <Image
                 src="/mail.svg"
                 alt="Logo"
@@ -52,7 +62,10 @@ export default function Navbar() {
           </li>
           <li>
             <div className={styles.navbar_icon_wrapper}>
-              <a className="navbar_link" href="#">
+              <a
+                className="navbar_link"
+                href="https://github.com/iam-sachinverma/eventengage-assignment"
+              >
                 <Image
                   src="/bell.svg"
                   alt="Logo"
@@ -67,7 +80,10 @@ export default function Navbar() {
             </div>
           </li>
           <li>
-            <a className="navbar_link" href="#">
+            <a
+              className="navbar_link"
+              href="https://github.com/iam-sachinverma/eventengage-assignment"
+            >
               <Image
                 src="/question.svg"
                 alt="Logo"
@@ -78,7 +94,10 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="" className="navbar_link">
+            <a
+              href="https://github.com/iam-sachinverma/eventengage-assignment"
+              className="navbar_link"
+            >
               <Image
                 src="/avatar.svg"
                 alt="Logo"
@@ -92,12 +111,20 @@ export default function Navbar() {
       </nav>
 
       <div className={styles.mobile_navbar_btn}>
-        <a href="" className={styles.mobile_nav_icon} onClick={toggleMobileNav}>
+        <a
+          href="https://github.com/iam-sachinverma/eventengage-assignment"
+          className={styles.mobile_nav_icon}
+          onClick={toggleMobileNav}
+        >
           <span className="material-icons-round" data-name="close-outline">
             close
           </span>
         </a>
-        <a href="" className={styles.mobile_nav_icon} onClick={toggleMobileNav}>
+        <a
+          href="https://github.com/iam-sachinverma/eventengage-assignment"
+          className={styles.mobile_nav_icon}
+          onClick={toggleMobileNav}
+        >
           <span className="material-icons-round" data-name="menu-outline">
             <svg
               width="40"
