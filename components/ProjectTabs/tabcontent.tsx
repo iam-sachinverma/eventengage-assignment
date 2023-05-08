@@ -3,13 +3,33 @@
 import React from "react";
 import Image from "next/image";
 
-import { Layout } from "antd";
+import { Layout, Dropdown } from "antd";
+import type { MenuProps } from "antd";
+import { DownOutlined } from "@ant-design/icons";
 
 import styles from "./tabcontent.module.scss";
 
 const { Content, Footer, Sider } = Layout;
 
 export function TabContent() {
+  const onMenuClick: MenuProps["onClick"] = (e) => {
+    console.log("click", e);
+  };
+
+  const items = [
+    {
+      key: "1",
+      label: "Download",
+    },
+    {
+      key: "2",
+      label: "Hidden",
+    },
+    {
+      key: "3",
+      label: "Delete",
+    },
+  ];
   return (
     <Layout style={{ background: "#f2fbf9" }}>
       <Sider
@@ -60,19 +80,40 @@ export function TabContent() {
               <Image src="/delete.svg" alt="" width={24} height={24} />
             </button>
           </div>
+          <div className={styles.dropdown_button}>
+            <Dropdown.Button
+              menu={{ items, onClick: onMenuClick }}
+              type="text"
+              style={{
+                transform: "rotate(90deg)",
+              }}
+            ></Dropdown.Button>
+          </div>
         </div>
         <Content>
           <div className={styles.image_container}>
-            {/* <div className={styles.overlay_text}>
-              <h2>we work</h2>
+            <div className={styles.overlay_text}>
+              <Image src="/wework-logo-2.png" alt="" width={192} height={45} />
               <p>For all the ways you work, we're here</p>
-            </div> */}
-            {/* <div className={styles.button_group}>
-              <button>Button 1</button>
-              <button>Button 2</button>
-              <button>Button 3</button>
-              <button>Button 3</button>
-            </div> */}
+            </div>
+            <div className={styles.button_group}>
+              <button className="button">
+                <Image src="/pdf.svg" alt="" width={24} height={24} />
+                <span>1/15</span>
+              </button>
+              <button className="button">
+                <Image src="/download.svg" alt="" width={24} height={24} />
+              </button>
+              <button className="button">
+                <Image src="/zoom_out.svg" alt="" width={24} height={24} />
+              </button>
+              <button className="button">
+                <Image src="/zoom_in.svg" alt="" width={24} height={24} />
+              </button>
+              <button className="button">
+                <Image src="/open.svg" alt="" width={24} height={24} />
+              </button>
+            </div>
           </div>
         </Content>
         <Footer style={{ padding: "0", background: "#f2fbf9" }}>

@@ -12,20 +12,20 @@ type TargetKey = React.MouseEvent | React.KeyboardEvent | string;
 const initialItems = [
   {
     label: "Basic Info",
-    children: "Content of Tab 1",
+    // children: "Content of Tab 1",
     key: "1",
     closable: false,
   },
   { label: "Files", children: "Content of Tab 2", key: "2", closable: false },
   {
     label: "Mutual Action Plan",
-    children: "Content of Tab 3",
+    // children: "Content of Tab 3",
     key: "3",
     closable: false,
   },
   {
     label: "Contact",
-    children: "Content of Tab 4",
+    // children: "Content of Tab 4",
     key: "4",
     closable: false,
   },
