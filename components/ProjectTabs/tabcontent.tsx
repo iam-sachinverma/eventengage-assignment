@@ -5,7 +5,6 @@ import Image from "next/image";
 
 import { Layout, Dropdown } from "antd";
 import type { MenuProps } from "antd";
-import { DownOutlined } from "@ant-design/icons";
 
 import styles from "./tabcontent.module.scss";
 
@@ -94,7 +93,7 @@ export function TabContent() {
           <div className={styles.image_container}>
             <div className={styles.overlay_text}>
               <Image src="/wework-logo-2.png" alt="" width={192} height={45} />
-              <p>For all the ways you work, we're here</p>
+              <p>For all the ways you work, we are here</p>
             </div>
             <div className={styles.button_group}>
               <button className="button">
