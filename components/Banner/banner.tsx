@@ -34,8 +34,8 @@ export default function Banner() {
           <Image
             src="/wework.png"
             alt="banner"
-            width={isMobile ? 35 : 70}
-            height={isMobile ? 35 : 70}
+            width={!isMobile ? 70 : 35}
+            height={!isMobile ? 70 : 35}
             quality={100}
           />
         </div>
@@ -43,8 +43,8 @@ export default function Banner() {
           <Image
             src="/plus.svg"
             alt="banner"
-            width={isMobile ? 10 : 18}
-            height={isMobile ? 10 : 18}
+            width={!isMobile ? 18 : 10}
+            height={!isMobile ? 18 : 10}
             quality={100}
           />
         </span>
@@ -52,8 +52,8 @@ export default function Banner() {
           <Image
             src="/slaesforce.png"
             alt="banner"
-            width={isMobile ? 40 : 90}
-            height={isMobile ? 40 : 90}
+            width={!isMobile ? 90 : 40}
+            height={!isMobile ? 90 : 40}
             quality={100}
           />
         </div>

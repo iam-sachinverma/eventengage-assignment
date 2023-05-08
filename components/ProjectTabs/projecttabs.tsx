@@ -62,7 +62,7 @@ const ProjectTabs: React.FC = () => {
           activeKey={"1"}
           size={isMobile ? "small" : "large"}
           tabBarGutter={5}
-          className="tabs_style"
+          className={styles.tabs_style}
         >
           <TabPane
             tab={<span style={{ color: "#00B686" }}>Basic Info</span>}

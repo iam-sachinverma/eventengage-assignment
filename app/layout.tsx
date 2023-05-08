@@ -1,3 +1,5 @@
+"use client";
+
 import "../styles/globals.scss";
 import { Inter } from "next/font/google";
 import "material-icons/iconfont/material-icons.css";
